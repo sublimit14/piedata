@@ -1,0 +1,106 @@
+@media screen and (max-width: 1199px) {
+    .first-slide h1 {
+        font-size: 100px;
+    }
+    .first-slide h1 span {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .first-slide h1 {
+        font-size: 87px;
+        margin-bottom: 45px;
+    }
+    .first-slide h1 span {
+        font-size: 60px;
+    }
+    .content-slide .container {
+        flex-direction: column;
+        .col {
+            width: 100%;
+            &:first-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .modal {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: calc(100% - 15px);
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    .first-slide .logo {
+        margin: 0;
+        left: 15px;
+        top: 20px;
+        right: auto;
+        height: 25px;
+    }
+    .first-slide video {
+        position: static;
+        height: 260px;
+    }
+    .first-slide::before {
+        height: 260px;
+        background: linear-gradient(180deg, rgba(8, 3, 24, 0.4) 0%, #080318 100%);
+    }
+    .first-slide .btn {
+        margin-right: auto;
+        margin-left: 15px;
+    }
+    .first-slide p {
+        font-size: 18px;
+        padding: 0 15px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .first-slide h1 span {
+        font-size: 42px;
+    }
+    .first-slide h1 {
+        margin-bottom: 30px;
+        text-align: left;
+        padding: 0 15px;
+        font-size: 56px;
+    }
+    .first-slide {
+        padding-top: 0;
+        align-items: flex-start;
+        padding-bottom: 80px;
+    }
+    .partners__item {
+        width: 100%;
+    }
+    .content-slide img {
+        height: 205px;
+    }
+    .partners__item img {
+        width: 70%;
+        height: 60px;
+    }
+    .partners__items {
+        gap: 50px 0;
+    }
+    .swiper {
+        overflow: visible;
+        height: auto;
+        min-height: auto;
+    }
+    .swiper-wrapper {
+        flex-direction: column;
+    }
+    .content-slide h2 {
+        font-size: 40px;
+    }
+    footer .mes {
+        font-size: 34px;
+    }
+    .content-slide {
+        margin-bottom: 80px;
+    }
+}

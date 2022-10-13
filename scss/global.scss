@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "TT Fors";
+    src: url("../fonts/TT Fors Trial ExtraLight.eot");
+    src: local("☺"), url("../fonts/TT Fors Trial ExtraLight.woff") format("woff"),
+        url("../fonts/TT Fors Trial ExtraLight.ttf") format("truetype"),
+        url("../fonts/TT Fors Trial ExtraLight.svg") format("svg");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TT Fors";
+    src: url("../fonts/TT Fors Trial Regular.eot");
+    src: local("☺"), url("../fonts/TT Fors Trial Regular.woff") format("woff"),
+        url("../fonts/TT Fors Trial Regular.ttf") format("truetype"),
+        url("../fonts/TT Fors Trial Regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TT Fors";
+    src: url("../fonts/TT Fors Trial Light.eot");
+    src: local("☺"), url("../fonts/TT Fors Trial Light.woff") format("woff"),
+        url("../fonts/TT Fors Trial Light.ttf") format("truetype"),
+        url("../fonts/TT Fors Trial Light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TT Fors";
+    src: url("../fonts/TT Fors Trial DemiBold.eot");
+    src: local("☺"), url("../fonts/TT Fors Trial DemiBold.woff") format("woff"),
+        url("../fonts/TT Fors Trial DemiBold.ttf") format("truetype"),
+        url("../fonts/TT Fors Trial DemiBold.svg") format("svg");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("../fonts/TTFirsNeue-Light.eot");
+    src: local("☺"), url("../fonts/TTFirsNeue-Light.woff") format("woff"),
+        url("../fonts/TTFirsNeue-Light.ttf") format("truetype"), url("../fonts/TTFirsNeue-Light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("../fonts/TTFirsNeue-Regular.eot");
+    src: local("☺"), url("../fonts/TTFirsNeue-Regular.woff") format("woff"),
+        url("../fonts/TTFirsNeue-Regular.ttf") format("truetype"), url("../fonts/TTFirsNeue-Regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTFirsNeue";
+    src: url("../fonts/TTFirsNeue-Medium.eot");
+    src: local("☺"), url("../fonts/TTFirsNeue-Medium.woff") format("woff"),
+        url("../fonts/TTFirsNeue-Medium.ttf") format("truetype"), url("../fonts/TTFirsNeue-Medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: "TT Fors";
+    font-size: 16px;
+    font-weight: 400;
+    color: $bodyColor;
+    background: #080318;
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    display: block;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    /* @include adaptivValue("font-size", 16, 16, 1); */
+    display: inline-block;
+    transition: color 0.3s;
+    text-decoration: none;
+    color: $bodyColor;
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+.wrapper {
+
+    &.overlay {
+        position: relative;
+        &::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: calc(100% - 56px);
+            background: rgba(0, 0, 0, 0.64);
+            top: 56px;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+    }
+}
+
+
+button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: color 0.3s;
+}
+
+input,
+textarea {
+    border-radius: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+}
+
+::selection {
+    background-color: rgba($color: #fddf71, $alpha: 0.5);
+    color: #080318;
+}
+* {
+    outline: none;
+    scrollbar-color: #fddf71 #080318;
+    scrollbar-width: thin;
+}
+*scrollbarbutton {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    background: #fddf71;
+}
+*::-webkit-scrollbar-track {
+    background-color: #080318;
+    width: 3px;
+}
+
+.blocks-gallery-grid {
+    width: 100%;
+}
+.blocks-gallery-item:last-child {
+    margin-bottom: 0;
+}
+.wp-block-gallery .blocks-gallery-item {
+    margin-bottom: 0;
+}
+.content-page {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.white-btn {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+.btn-gradient {
+    background: #080318;
+    border-radius: 12px;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    font-size: 18px;
+    p {
+        position: relative;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(90deg, #fc7971 0%, #fddf71 73.96%, #71fdf5 100%);
+        border-radius: 12px;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: -1px;
+        left: -1px;
+        z-index: -1;
+    }
+}
+.section-head {
+    margin-bottom: 90px;
+    &__subtitle {
+        display: inline-block;
+        background: linear-gradient(90deg, #fc7971 0%, #fddf71 73.96%, #71fdf5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    h2 {
+        margin-bottom: 12px;
+    }
+    &__descr {
+        font-weight: 300;
+        line-height: 1.452;
+        font-size: 18px;
+    }
+}
+h2 {
+    font-family: "TTFirsNeue";
+    font-size: 40px;
+    font-weight: 400;
+}
